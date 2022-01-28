@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'LoginJSONServer'`, () => {
+  it(`should have as title 'Login'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('LoginJSONServer');
+    expect(app.title).toEqual('Login');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('LoginJSONServer app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Login app is running!');
   });
 });
